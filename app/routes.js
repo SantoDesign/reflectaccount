@@ -32,6 +32,10 @@ router.get('/', async (req, res) => {
     res.render('ChooseYourPlan');
 });
 
+router.get('/captcha', async (req, res) => {
+    res.render('captcha');
+});
+
 router.get('/plans', async (req, res) => {
     res.render('Plans');
 });
