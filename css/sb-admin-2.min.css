@@ -10681,11 +10681,6 @@ a.text-dark:focus,a.text-dark:hover {
     widows: 3;
   }
 
-  h2,h3 {
-    page-break-after: avoid;
-  }@  page {
-    size: a3;
-  }
 
   body {
     min-width: 992px!important;
@@ -12456,13 +12451,9 @@ text-decoration: underline;
 input[type='file'] {
   color: transparent;
 }
-.file-upload{  
-}
+
 .dropdownButton{
     background-color: inherit;
-}
-.form-control{
-    
 }
 .whitening{
     color: white;
@@ -13387,8 +13378,6 @@ input[type=checkbox].css-checkbox {
 				user-select: none;
 			}
 
-.helpTitle{ 
-}
 .helpText{
     color: #858796 !important;
 }
@@ -13421,6 +13410,7 @@ input[type=checkbox].css-checkbox {
 #emailInUse{
     text-align: center;
 
+    transition: opacity 3s ease-in-out;
     -webkit-transition: opacity 3s ease-in-out;
     -moz-transition: opacity 3s ease-in-out;
     -ms-transition: opacity 3s ease-in-out;
@@ -13454,11 +13444,24 @@ input[type=checkbox].css-checkbox {
     text-decoration: underline !important;
     font-weight: 300;
 }
-
+.googleCaptchaSize{
+  padding: 1rem;
+}
+.googleCaptchaSize div{
+  margin: auto;
+}
 
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
+  .googleCaptchaSize{
+    padding: 0;
+    
+    transform:scale(0.76);
+    -webkit-transform:scale(0.76);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+  }
     .thanks{
         font-size: 30px !important;
     }
@@ -13497,8 +13500,6 @@ input[type=checkbox].css-checkbox {
     }
     .familyMemberCardSpacer{
         display: none;
-    }
-    .familyMemberCard{
     }
     .accordion {
       font-size: 16px;

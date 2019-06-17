@@ -771,8 +771,6 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
     margin: auto;
     border-radius: 20%;
 }
-.picOptions p{
-}
 .picOptions5x7{
     width: 105px;
     height: 75px;
@@ -942,10 +940,6 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
     display: inline-block;
     width: 50%;
     height: 40px;
-}
-.row1 div{
-    display: inline-block;
-    float: left;
 }
 .listy{
     text-align: left
@@ -1668,6 +1662,12 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
+  #rc-imageselect, .g-recaptcha {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+  }
     .videoPlay{
         position: absolute;
         display: inline-block;
